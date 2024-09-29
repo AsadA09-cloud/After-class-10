@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  input[type="text"]{
+ border: 2px solid red;
+  }
+  input[type="password"]{
+ border: 3px solid greenyellow;
+  }  
+  ul>li{
+   color:blueviolet 
+  }
+  h1+p{color: aquamarine;}     
+  p+p{color: purple;}    
+  a:hover{color: chocolate;} 
+  li:nth-child(1) {color: darksalmon;
+}
+div:not(.class2) {
+    border: 2px dashed wheat;
+} 
+h1::before {
+  content: "😊 ";
+  font-size: 1.5em;
+  color: orange;
+}  
+p::after {
+  content: " ⭐";
+  font-size: 1.2em;
+  color: gold;
+} 
+p::first-letter {
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+}
+ </style>
+</head>
+<body>
+<input type="text" placeholder="name">
+<input type="password" placeholder="Enter password">
+<!--Child Selector-->
+<ul>
+<li>Home</li>
+<li>School</li> 
+<li>Break</li>   
+</ul> 
+<!--Sibling Selector--> 
+<h1>Sibling</h1>
+<p>Sibling</p>
+<p>Sibling</p>
+<!--Sudo Classes--> 
+<!--Hover--> 
+<a href="#">This is a link</a>
+<!--nth Child--> 
+<ul>
+<li>Home</li>
+<li>School</li>
+</ul>
+<!--not selector--> 
+<div class="class1">Div 1</div>
+<div class="class2">Div 2</div> 
+<!--Pseudo Element-->
+<h1 class="Before">Before</h1>
+<p class="After">After</p>
+<p class="First">First</p>
+</body>
+</html>
